@@ -1,0 +1,54 @@
+GET http://localhost:3000
+###
+GET http://localhost:3000/students
+###
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "firstName": "oliver",
+  "secondName": "tuyizeyee",
+  "email": "oliver@gmail.com"
+}
+
+###
+GET http://localhost:3000/students/4
+
+###
+PUT http://localhost:3000/students/3
+Content-Type: application/json
+
+{
+  "firstName": "ian mugabe",
+  "secondName": "iratuzi2",
+  "email": "iratuzi2@gmail.com"
+}
+###
+DELETE http://localhost:3000/students/21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ON HOW TO TEST API 
+*we use -Rest Client extension in vs editor to test api endpoints
+       - create a file with .rest extension
+       - write the api endpoints in the file
+       - click on send request above the endpoint to test it
+*we use Thunder Client extension in vs editor to test api endpoints
+       - install the extension
+       - click on the thunder icon on the left sidebar
+       - create a new request
+       - select the method type (GET, POST, PUT, DELETE)
+       - enter the api endpoint url
+       - for POST and PUT methods, select body and raw and enter the json data
+       - click on send to test the api endpoint      
